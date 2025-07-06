@@ -1,0 +1,8 @@
+#N canvas 130 130 1920 989 12;
+#X obj 217 85 delwrite~ \$0-delay;
+#X obj 1235 388 flange;
+#X obj 504 106 delread4~ \$0-delay 0.1;
+#X obj 504 130 *~;
+#X obj 698 112 delread4~ \$0-delay 0.1;
+#X obj 500 310 convo;
+#X connect 2 0 3 0;
